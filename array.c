@@ -3,18 +3,16 @@ int main()
 {
    int N;
    scanf("%d", &N);
-   if(N > 0){
-    for(int i=1; i<=N; i++){
-    printf("%d\n", i);
+   int A[N];
+   for(int i=0; i<N; i++){
+    scanf("%d", &A[i]);
    }
-   }else{
-    for(int i=N; i<=0; i++){
-    printf("%d\n", i);
+
+   for(int i=N-1; i>=0; i--){
+   if(i % 2 == 1){
+     printf("%d ", A[i]);
    }
   }
    
-
-
-
 return 0;
 }
