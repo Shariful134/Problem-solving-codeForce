@@ -1,14 +1,9 @@
 #include<stdio.h>
 int main()
 {
-int n;
-scanf("%d",&n);
-int array[n];
+int array[5]={1,2,3,4,5};
 
-for( int i=0; i<n; i++){
-  scanf("%d ", &array[i]);
-}
-for( int i=n-1; i>=0; i--){
+for( int i=0; i<5; i++){
   printf("%d ", array[i]);
 }
 
